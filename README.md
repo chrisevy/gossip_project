@@ -33,5 +33,7 @@ soit par le lien directe: http://localhost:4567/gossips/numero_potin/edit
 
 
 La partie édition s'affiche mais ne renvoi pas le submit
+
+
 Le 2.8 sur l'ajout de commentaires n'a pas était fait.
 
