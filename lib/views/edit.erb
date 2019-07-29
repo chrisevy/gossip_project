@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    
+    <h1>Editer un potin</h1>
+    <p>Mise à jour du potin n°<%= id%> grâce au formulaire ci-joint</p> 
+    <form action='/gossips/edit/' method='POST'> 
+        <% gossips.each do |gossip| %>
+            Modifie le nom :  <input type='text' name='gossip_author' value="<%= gossip.author %>" /><br/> 
+            Balances ton potin : <input type='text' name='gossip_content' value="<%= gossip.content %>" /><br/> 
+         <% end %>
+        <input type='hidden' name='id' value='<%= id %>'/>
+        <input class="btn btn-primary" type='submit'/> 
+    </form> 
+
+
+
+  </body>
+</html>
